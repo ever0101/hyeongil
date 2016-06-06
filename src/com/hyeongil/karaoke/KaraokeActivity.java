@@ -1,6 +1,7 @@
 package com.hyeongil.karaoke;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -30,6 +31,7 @@ public class KaraokeActivity extends Activity implements SensorEventListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
         /*
         sp=new SoundPool(4,AudioManager.STREAM_MUSIC,100);
         song=sp.load(this,R.raw.konan,1);

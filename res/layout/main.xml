@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-<Button android:text="Button" 
-		android:layout_width="wrap_content" 
-		android:layout_height="wrap_content" android:onClick="onClickButton1" android:id="@+id/button1">
-</Button>
-<Button android:text="Button" android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+    android:layout_height="fill_parent" >
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="125dp"
+        android:layout_y="60dp"
+        android:text="씽쏭씽쏭!" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="128dp"
+        android:layout_y="104dp"
+        android:onClick="onClickButton1"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="129dp"
+        android:layout_y="161dp"
+        android:text="Stop" />
+
+</AbsoluteLayout>
